@@ -1,0 +1,42 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+
+/* ボタン3つ
+------------------------------------------ */
+.inquiry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: clamp(f.rem(10),2vw,f.rem(20));
+  margin: f.rem(20) auto;
+
+  @include v.mq(pc) {
+    position: absolute;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    z-index: 3;
+  }
+
+  &__common {
+    color: v.$c-white;
+    width: clamp(f.rem(250),30vw,f.rem(340));
+    height: clamp(f.rem(48),6vw,f.rem(75));
+    font-size: clamp(f.rem(16),2.5vw,f.rem(24));
+  }
+
+  &__green {
+    background-color: v.$c-green;
+  }
+
+  &__orange {
+    background-color: v.$c-orange;
+  }
+
+  &__skyblue {
+    background-color: v.$c-skyblue;
+  }
+}

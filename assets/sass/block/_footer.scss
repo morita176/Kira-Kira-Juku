@@ -1,0 +1,62 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* footer
+------------------------------------------ */
+
+.footer {
+  &__top {
+    display: flex;
+    flex-direction: column;
+
+    @include v.mq(pc) {
+      flex-direction: row;
+    }
+
+    &--item {
+      position: relative;
+      width: 100%;
+      height: f.rem(170);
+      overflow: hidden;
+      text-decoration: none;
+
+      //画像枠
+      &.qa {
+        background: url(../image/pht_qa.jpg) center / cover no-repeat;
+      }
+
+      &.classrooms {
+        background: url(../image/pht_classrooms.jpg) center / cover no-repeat;
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    font-size: f.rem(22);
+    font-weight: v.$f-bold;
+    color: v.$c-white;
+    padding-left: f.rem(16);
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    @include v.mq(pc) {
+      justify-content: center;
+    }
+  }
+
+  &__bottom {
+    font-size: f.rem(13);
+    background-color: v.$c-gray;
+    height: f.rem(83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include v.mq(pc) {
+      height: f.rem(120);
+    }
+  }
+}

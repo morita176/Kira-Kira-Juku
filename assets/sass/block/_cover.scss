@@ -1,0 +1,66 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* cover
+------------------------------------------ */
+
+.cover {
+  position: relative;
+  margin-top: clamp(f.rem(70), 8vw, f.rem(101));
+  height: 250px;
+  overflow: hidden;
+
+  &__img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right top;
+  }
+
+  // 見出し
+  &__title {
+    position: absolute;
+    top: f.rem(33);
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: clamp(f.rem(16), 4vw, f.rem(32));
+
+    & img {
+      width: clamp(f.rem(24), 4vw, f.rem(52));
+    }
+
+    & h1 {
+      font-size: clamp(f.rem(25), 5vw, f.rem(60));
+      font-weight: v.$f-heavy;
+      color: v.$c-blue;
+      line-height: 1.15;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--top {
+      line-height: 1.7;
+      font-size: clamp(f.rem(11), 2.5vw, f.rem(20));
+    }
+
+    &--b1 {
+      font-size: clamp(f.rem(25), 4.5vw, f.rem(54));
+    }
+
+    &--b2 {
+      font-size: clamp(f.rem(36), 6vw, f.rem(74));
+
+      @include v.mq(pc) {
+        line-height: f.rem(111);
+      }
+    }
+
+  }
+}

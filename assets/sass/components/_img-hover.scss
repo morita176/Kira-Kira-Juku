@@ -1,0 +1,19 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* 仕様により
+画像はリンクのクリック領域とし、マウスオーバーすると1.2倍拡大させてください。 */
+.img-hover {
+    display: inline-block;
+    overflow: hidden;
+
+    & img {
+        display: block;
+        transition: transform 0.1s ease;
+        will-change: transform;
+    }
+
+    &:hover img{
+        transform: scale(1.2);
+    }
+}

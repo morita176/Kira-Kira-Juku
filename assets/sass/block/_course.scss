@@ -1,0 +1,115 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* course
+------------------------------------------ */
+
+.course {
+  margin: f.rem(63) auto;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(28);
+    justify-content: center;
+    align-items: center;
+
+    @include v.mq(pc) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &--title {
+      font-size: f.rem(18);
+      font-weight: v.$f-bold;
+
+      @media (min-width: 768px) {
+        margin-top: .375rem;
+        font-size: f.rem(18);
+        line-height: 1.2;
+      }
+    }
+
+    &--arrow {
+      color: v.$c-blue;
+      font-weight: v.$f-Exbold;
+    }
+  }
+}
+
+
+/* タブ */
+.tab.st-theme-basic {
+  --st-anchor-primary-color: #383838;
+  --st-anchor-active-primary-color: #383838;
+  border: none;
+  margin-top: f.rem(21);
+  max-width: f.rem(1160);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* タブナビゲーション */
+.tab.st>.nav {
+  column-gap: .5rem;
+  flex-direction: row !important;
+  padding-left: f.rem(16);
+  padding-right: f.rem(16);
+
+  @media (min-width:768px) {
+    padding-left: 0;
+    padding-right: 0;
+    column-gap: 1.5rem;
+
+  }
+}
+
+
+.tab.st-theme-basic>.nav {
+  box-shadow: none;
+}
+
+.tab.st-theme-basic>.nav .nav-link {
+  padding-top: 1.3rem;
+  padding-bottom: 1.5rem;
+  font-size: f.rem(18);
+  font-weight: v.$f-bold;
+  line-height: 1;
+  background-color: v.$c-li-gray;
+  border-radius: f.rem(10) f.rem(10) 0 0;
+  color: rgba(51, 51, 51, 0.5);
+
+  @media (min-width: 768px) {
+    padding-top: 1.45rem;
+    padding-bottom: 1.875rem;
+    font-size: f.rem(24);
+  }
+}
+
+/* アクティブ状態 */
+.tab.st-theme-basic>.nav .nav-link.active {
+  background-color: v.$c-li-blue;
+
+}
+
+.tab.st-theme-basic>.nav .nav-link.active::after {
+  background-color: unset;
+  content: none;
+}
+
+/* タブコンテンツ */
+.tab.st-theme-basic>.tab-content {
+  height: auto;
+  background-color: v.$c-li-blue;
+  border-radius: 0 0 f.rem(10) f.rem(10);
+}

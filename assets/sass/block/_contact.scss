@@ -1,0 +1,17 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* contact
+------------------------------------------ */
+
+.contact{
+  background-color: v.$c-li-pink;
+  text-align: center;
+  line-height: 1.5;
+  padding: f.rem(20) 0;
+  @include v.mq(pc) {
+    & br{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* ボタンの共通スタイル */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: f.rem(40);
+    font-weight: v.$f-bold;
+
+    &__white {
+        height: f.rem(66);
+        width: f.rem(350);
+        background-color: v.$c-white;
+        color: v.$c-blue;
+        margin: f.rem(33) auto;
+
+        @include v.mq(pc) {
+            height: f.rem(61);
+            width: f.rem(282);
+            color: v.$c-white;
+            background: v.$c-gradient;
+            margin-right: f.rem(19);
+        }
+    }
+
+    &__blue {
+        color: v.$c-white;
+        height: f.rem(69);
+        width: f.rem(305);
+        background: v.$c-gradient;
+        font-size: f.rem(20);
+        margin: f.rem(20) auto;
+    }
+}

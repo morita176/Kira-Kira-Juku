@@ -1,0 +1,8 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+.container {
+  margin: 0 auto;
+  padding-inline: clamp(f.rem(16), 4vw, f.rem(32));
+  max-width: v.$width-wide;
+}

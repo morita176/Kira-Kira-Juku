@@ -1,0 +1,65 @@
+@use '../foundation/variables'as v;
+@use '../foundation/functions'as f;
+
+/* point
+------------------------------------------ */
+.point {
+  margin-top: f.rem(20);
+  @include v.mq(pc) {
+    margin-top: f.rem(50);
+  }
+
+  &--1 {
+    font-size: f.rem(40);
+  }
+
+  &--2 {
+    font-size: f.rem(32);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: clamp(f.rem(16), 3vw, f.rem(20));
+    margin-bottom: f.rem(20);
+
+    @include v.mq(pc) {
+      flex-direction: row;
+
+      &>* {
+        flex: 1 1 min(100%, f.rem(500));
+      }
+      &--left{
+        flex-direction: row-reverse
+      }
+    }
+
+    &--img {
+      max-width: f.rem(560);
+
+      @include v.mq(pc) {
+        max-width: none;
+      }
+    }
+
+    &--num {
+      font-weight: v.$f-bold;
+      font-size: f.rem(24);
+      font-style: italic;
+    }
+
+    &--ti {
+      font-weight: v.$f-bold;
+      font-size: f.rem(20);
+    }
+  }
+}
+
+h2 {
+  font-size: f.rem(28);
+  font-weight: v.$f-bold;
+  text-align: center;
+  margin-bottom: f.rem(20);
+}
