@@ -17,4 +17,8 @@ h3{
   font-size: clamp(f.rem(28), 3vw, f.rem(36));
   font-weight: v.$f-bold;
   text-align: center;
+  padding-left: 4vw;
+  @include v.mq(pc) {
+    padding-left: 0;
+  }
 }

@@ -5,18 +5,20 @@
 ------------------------------------------ */
 
 .course {
-  margin: f.rem(63) auto;
+  margin-top: clamp(f.rem(67), 4.8vw, f.rem(80));
+  margin-bottom: clamp(f.rem(63), 4.3vw, f.rem(72));
 
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: f.rem(28);
+    row-gap: clamp(f.rem(23), 2.2vw, f.rem(35));
     justify-content: center;
     align-items: center;
 
     @include v.mq(pc) {
       flex-direction: row;
       flex-wrap: wrap;
+      column-gap: f.rem(31);
     }
   }
 
@@ -30,30 +32,40 @@
     }
 
     &--title {
-      font-size: f.rem(18);
+      font-size: f.rem(20);
       font-weight: v.$f-bold;
-
-      @media (min-width: 768px) {
-        margin-top: .375rem;
-        font-size: f.rem(18);
-        line-height: 1.2;
-      }
+      margin-top: clamp(6px, 0.8vw, 10px);
     }
 
     &--arrow {
       color: v.$c-blue;
       font-weight: v.$f-Exbold;
+      text-indent: -7px;
+      font-size: f.rem(28);
+
+      @include v.mq(pc) {
+        text-indent: -3px;
+      }
     }
   }
 }
 
 
 /* タブ */
+.st>.tab-content>.tab-pane {
+  padding-top: clamp(28px, 2.2vw, 33px);
+  padding-bottom: f.rem(52);
+  padding-inline: clamp(16px, 2vw, 16px);
+  @include v.mq(pc) {
+    padding-bottom: f.rem(28);
+  }
+}
+
 .tab.st-theme-basic {
   --st-anchor-primary-color: #383838;
   --st-anchor-active-primary-color: #383838;
   border: none;
-  margin-top: f.rem(21);
+  margin-top: clamp(f.rem(26), 2.8vw, f.rem(43));
   max-width: f.rem(1160);
   margin-left: auto;
   margin-right: auto;
@@ -61,16 +73,11 @@
 
 /* タブナビゲーション */
 .tab.st>.nav {
-  column-gap: .5rem;
+  column-gap: clamp(f.rem(15), 2vw, f.rem(32));
   flex-direction: row !important;
-  padding-left: f.rem(16);
-  padding-right: f.rem(16);
-
-  @media (min-width:768px) {
-    padding-left: 0;
-    padding-right: 0;
-    column-gap: 1.5rem;
-
+  padding: 0 1rem;
+  @include v.mq(pc) {
+    padding: 0;
   }
 }
 
@@ -80,20 +87,14 @@
 }
 
 .tab.st-theme-basic>.nav .nav-link {
-  padding-top: 1.3rem;
-  padding-bottom: 1.5rem;
-  font-size: f.rem(18);
+  padding-top: clamp(f.rem(21), 1.6vw, f.rem(23));
+  padding-bottom: clamp(f.rem(24), 1.6vw, f.rem(24));
+  font-size: clamp(f.rem(18), 1.6vw, f.rem(24));
   font-weight: v.$f-bold;
   line-height: 1;
   background-color: v.$c-li-gray;
   border-radius: f.rem(10) f.rem(10) 0 0;
   color: rgba(51, 51, 51, 0.5);
-
-  @media (min-width: 768px) {
-    padding-top: 1.45rem;
-    padding-bottom: 1.875rem;
-    font-size: f.rem(24);
-  }
 }
 
 /* アクティブ状態 */

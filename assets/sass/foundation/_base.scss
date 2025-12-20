@@ -4,6 +4,7 @@
 
 /* 共通事項
 ------------------------------------------ */
+
 // 仕様書より追加
 // ヘッダーのアンカーリンクにはスムーススクロールを使用してください。
 html{
@@ -27,7 +28,11 @@ img {
 a {
   color: v.$c-base;
   text-decoration: none;
-  transition: all 1s;
+  transition: opacity 0.3s ease;;
+}
+// リンクはマウスオーバー時に透過させる
+a:hover{
+  opacity: 0.6;
 }
 
 ul {

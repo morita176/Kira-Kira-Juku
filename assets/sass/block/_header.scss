@@ -58,6 +58,8 @@
   }
 }
 
+
+
 /* ハンバーガーメニュー
 ------------------------------------------ */
 @include v.mq(sp) {
@@ -74,7 +76,7 @@
 
   }
 
-  /* メニュー一覧 */
+  // メニュー一覧
   .hamburger-nav-list {
     display: flex;
     flex-direction: column;
@@ -91,8 +93,8 @@
     }
   }
 
-  /* 矢印の位置の指定 */
-  .bi-arrow-right {
+  // 矢印の位置の指定
+  .arrow-hidden {
     padding-right: f.rem(11);
   }
 }

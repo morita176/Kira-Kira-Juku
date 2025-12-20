@@ -3,6 +3,9 @@
 
 .container {
   margin: 0 auto;
-  padding-inline: clamp(f.rem(16), 4vw, f.rem(32));
+  padding: 0 f.rem(16);
   max-width: v.$width-wide;
+      @include v.mq(pc) {
+        padding: 0 f.rem(22);
+      }
 }

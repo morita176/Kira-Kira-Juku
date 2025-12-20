@@ -72,7 +72,7 @@
                         </div>
                         <img src="./assets/image/frame-right.png" alt="">
                     </div>
-                    <p>現役高校生・高卒生</p>
+                    <p class="cover__bottom">現役高校生・高卒生</p>
                     <h1>入学説明会の<br>お申し込み開始</h1>
                 </div>
                 <!-- ボタン3つ-->
@@ -85,32 +85,41 @@
             <!-- ポイント -->
             <section class="point" id="point">
                 <div class="container">
-                    <h2>選ばれる<span class="pink point--1">3</span>つの理由</h2>
+                    <h2>選ばれる<span class="pink point--1 poppins">3</span>つの理由</h2>
                     <!-- ポイントNo.1-->
                     <div class="point__item">
-                        <img class="point__item--img" src="./assets/image/pht_reason01.jpg" alt="">
+                        <picture class="point__item--img">
+                            <source media="(min-width: 769px)" srcset="./assets/image/pht_reason01.jpg">
+                            <img src="./assets/image/pht_reason01_sp.jpg" alt="">
+                        </picture>
                         <div class="point__item--bottom">
-                            <p class="point__item--num poppins pink">Point <span class="pink point--2">1</span></p>
+                            <p class="point__item--num poppins pink">Point<span class="pink point--2">1</span></p>
                             <p class="point__item--ti">実績のある講師陣だから安心</p>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p class="point__item--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
                     <!-- ポイントNo.2-->
                     <div class="point__item point__item--left">
-                        <img class="point__item--img" src="./assets/image/pht_reason02.jpg" alt="">
+                        <picture class="point__item--img">
+                            <source media="(min-width: 769px)" srcset="./assets/image/pht_reason02.jpg">
+                            <img src="./assets/image/pht_reason02_sp.jpg" alt="">
+                        </picture>
                         <div class="point__item--bottom">
-                            <p class="point__item--num poppins pink">Point <span class="pink point--2">2</span></p>
+                            <p class="point__item--num poppins pink">Point<span class="pink point--2">2</span></p>
                             <p class="point__item--ti">オンラインにも対応だから、早送り巻き戻し視聴できる。</p>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p class="point__item--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
                     <!-- ポイントNo.3-->
-                    <div class="point__item">
-                        <img class="point__item--img" src="./assets/image/pht_reason03.jpg" alt="">
+                    <div class="point__item point__item--1">
+                        <picture class="point__item--img">
+                            <source media="(min-width: 769px)" srcset="./assets/image/pht_reason03.jpg">
+                            <img src="./assets/image/pht_reason03_sp.jpg" alt="">
+                        </picture>
                         <div class="point__item--bottom">
-                            <p class="point__item--num poppins pink">Point <span class="pink point--2">3</span></p>
+                            <p class="point__item--num poppins pink">Point<span class="pink point--2">3</span></p>
                             <p class="point__item--ti">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</p>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p class="point__item--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
                 </div>
@@ -139,23 +148,43 @@
                                 <!-- items -->
                                 <!-- 1個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource01.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>高卒性</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource01.png">
+                                            <img src="./assets/image/pht_cource01_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>高卒生</p>
                                 </div>
                                 <!-- 2個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource02.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>高校3年生</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource02.png">
+                                            <img src="./assets/image/pht_cource02_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>高校3年生</p>
                                 </div>
                                 <!-- 3個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource03.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>高校2年生</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource03.png">
+                                            <img src="./assets/image/pht_cource03_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>高校2年生</p>
                                 </div>
                                 <!-- 4個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource04.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>高校1年生</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource04.png">
+                                            <img src="./assets/image/pht_cource04_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>高校1年生</p>
                                 </div>
                             </div>
                         </div>
@@ -164,24 +193,44 @@
                             <div class="course__inner">
                                 <!-- items -->
                                 <!-- 1個目 -->
-                                <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource05.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>難関大学・医学部合格を目指す</p>
+                                <div class="course__item ">
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource05.png">
+                                            <img src="./assets/image/pht_cource05_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>難関大学・医学部合格を目指す</p>
                                 </div>
                                 <!-- 2個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource06.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>名門私立大学合格を目指す</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource06.png">
+                                            <img src="./assets/image/pht_cource06_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>名門私立大学合格を目指す</p>
                                 </div>
                                 <!-- 3個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource07.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>国公立大学合格を目指す</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource07.png">
+                                            <img src="./assets/image/pht_cource07_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>国公立大学合格を目指す</p>
                                 </div>
                                 <!-- 4個目 -->
                                 <div class="course__item">
-                                    <a href="#" class="img-hover"><img src="./assets/image/pht_cource08.png" alt=""></a>
-                                    <p class="course__item--title"><i class="bi bi-arrow-right course__item--arrow"></i>海外の大学合格を目指す</p>
+                                    <a href="#" class="img-hover">
+                                        <picture>
+                                            <source media="(min-width: 769px)" srcset="./assets/image/pht_cource08.png">
+                                            <img src="./assets/image/pht_cource08_sp.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <p class="course__item--title"><i class="bi bi-arrow-right-short course__item--arrow"></i>海外の大学合格を目指す</p>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +238,7 @@
                 </div>
             </section>
             <!-- contact -->
-            <section class="contact">
+            <section class="contact contact--2">
                 <p>入学ご検討の方は、まずは入学説明会に<br>お越しください</p>
                 <!-- 青色ボタン -->
                 <a href="/entry" class="button button__blue">入学説明会に申し込む</a>
@@ -201,34 +250,34 @@
                     <table class="cost__table">
                         <thead>
                             <tr>
-                                <td class="cost__col cost__table--left">年間講数</td>
-                                <td class="cost__col">年間授業料（税込み）</td>
+                                <td class="cost__col cost__table--right">年間講数</td>
+                                <td class="cost__col cost__table--left">年間授業料（税込み）</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="cost__row">5講</td>
-                                <td class="cost__row pink"><span class="cost__row--left poppins">24,500</span><span class="cost__row--small">円</span></td>
+                                <td class="cost__row pink cost__table--left2"><span class="cost__row--left poppins">24,500</span><span class="cost__row--small">円</span></td>
                             </tr>
                             <tr>
                                 <td class="cost__row">10講</td>
-                                <td class="cost__row pink"><span class="cost__row--left poppins">49,000</span><span class="cost__row--small">円</span></td>
+                                <td class="cost__row pink cost__table--left2"><span class="cost__row--left poppins">49,000</span><span class="cost__row--small">円</span></td>
                             </tr>
                             <tr>
                                 <td class="cost__row">11講</td>
-                                <td class="cost__row pink"><span class="cost__row--left poppins">53,900</span><span class="cost__row--small">円</span></td>
+                                <td class="cost__row pink cost__table--left2"><span class="cost__row--left poppins">53,900</span><span class="cost__row--small">円</span></td>
                             </tr>
                             <tr>
                                 <td class="cost__row">12講</td>
-                                <td class="cost__row pink"><span class="cost__row--left poppins">58,800</span><span class="cost__row--small">円</span></td>
+                                <td class="cost__row pink cost__table--left2"><span class="cost__row--left poppins">58,800</span><span class="cost__row--small">円</span></td>
                             </tr>
                             <tr>
                                 <td class="cost__row">22講</td>
-                                <td class="cost__row pink"><span class="cost__row--left poppins">107,800</span><span class="cost__row--small">円</span></td>
+                                <td class="cost__row pink cost__table--left2"><span class="cost__row--left poppins">107,800</span><span class="cost__row--small">円</span></td>
                             </tr>
                             <tr>
                                 <td class="cost__row">24講</td>
-                                <td class="cost__row pink"><span class="cost__row--left poppins">117,600</span><span class="cost__row--small">円</span></td>
+                                <td class="cost__row pink cost__table--left3"><span class="cost__row--left poppins">117,600</span><span class="cost__row--small">円</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -246,14 +295,15 @@
         <!-- footer -->
         <footer class="footer">
             <div class="footer__top">
-                <div class="footer__top--item qa">
-                    <a href="#" class="img-hover"></a>
-                    <p class="footer__text">よくあるご質問</p>
+                <div class="footer__top--item">
+                    <a href="#" class="img-hover footer__qa">
+                        <p class="footer__text">よくあるご質問</p>
+                    </a>
                 </div>
-                <div class="footer__top--item classrooms">
-                    <a href="#" class="img-hover"></a>
-                    <p class="footer__text">お近くの教室を探す</p>
-
+                <div class="footer__top--item">
+                    <a href="#" class="img-hover footer__classrooms">
+                        <p class="footer__text">お近くの教室を探す</p>
+                    </a>
                 </div>
             </div>
             <div class="footer__bottom poppins">

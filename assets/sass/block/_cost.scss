@@ -5,14 +5,12 @@
 ------------------------------------------ */
 
 .cost {
-  margin: f.rem(64) auto;
-
-  @include v.mq(pc) {
-    font-size: f.rem(18);
-  }
-
+  margin-top: clamp(f.rem(67), 4.8vw, f.rem(81));
+  margin-bottom: clamp(f.rem(62), 4.3vw, f.rem(75));
+  font-size: clamp(f.rem(16), 1.2vw, f.rem(18));
   &__table {
-    margin: f.rem(23) auto 0;
+    margin-top: clamp(f.rem(24), 2.4vw, f.rem(42));
+    margin-inline: auto;
     width: 100%;
     border-collapse: collapse;
     border: 2px solid #ccc;
@@ -23,9 +21,38 @@
       max-width: f.rem(600);
     }
 
-    &--left {
-      width: 30%;
+    &--right {
+      width: 34%;
 
+      @include v.mq(pc) {
+        width: 24%;
+      }
+    }
+
+    &--left {
+      padding-right: f.rem(12);
+
+      @include v.mq(pc) {
+        padding-right: 0;
+      }
+    }
+
+    &--left2 {
+      padding-right: f.rem(10);
+      line-height: 1;
+
+      @include v.mq(pc) {
+        padding-right: 0;
+      }
+    }
+
+    &--left3 {
+      padding-left: f.rem(16);
+
+      @include v.mq(pc) {
+        padding-left: 0;
+        padding-top: f.rem(7);
+      }
     }
   }
 
@@ -37,19 +64,14 @@
     border: 1px solid #ccc;
 
     &--left {
-      font-size: f.rem(28);
+      font-size: clamp(f.rem(28), 1.9vw, f.rem(32));
       font-weight: v.$f-bold;
-
-      @include v.mq(pc) {
-        font-size: f.rem(32);
-      }
-
     }
   }
 }
 
 tr {
-  height: f.rem(60);
+  height: clamp(f.rem(64), 4.2vw, f.rem(77));
 }
 
 td,
